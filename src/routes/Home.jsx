@@ -1,12 +1,14 @@
 import React from 'react'
 import Navbar from '../components/Navbar'
-import Homecomponent from '../components/Homecomponent'
+import About from '../components/About'
+import Wrapper from '../components/Wrapper'
 
 const Home = () => {
   return (
     <div>
       <Navbar />
-      <Homecomponent />
+      <About />
+      <Wrapper />
     </div>
   )
 }
