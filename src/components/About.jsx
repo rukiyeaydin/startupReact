@@ -4,7 +4,7 @@ import insaatdeco from "../images/insaat-dekorasyon.jpg"
 const About = () => {
   return (
     <div className='p-4 my-6 flex flex-col lg:flex-row items-start lg:justify-center'>
-      <div className='flex flex-col lg:flex-row w-full lg:w-9/12 '>
+      <div className='flex flex-col lg:flex-row w-full lg:w-10/12 '>
         <div className='mr-4'>
           <h1 className='font-bold font-mono my-4 text-sky-400 text-xl'>YENİDEN DEKORASYON & İNŞAAT</h1>
           <h1 className='font-bold mb-6 text-3xl'>Yılların Tecrübesi <span className='text-sky-400'>25 Yılı</span>  Aşkın süreyle Sektörde Hizmet Vermekteyiz</h1>
