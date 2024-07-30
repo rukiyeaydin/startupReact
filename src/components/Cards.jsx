@@ -4,6 +4,7 @@ import alci from "../images/cards/alci.jpg"
 import parke from "../images/cards/parke.jpg"
 import wallpp from "../images/cards/wallpp.jpg"
 import boyama from "../images/cards/boyama.webp"
+import "../components/cards.css"
 
 const Cards = () => {
     const items = [
