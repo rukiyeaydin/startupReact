@@ -35,9 +35,9 @@ const Navbar = () => {
                     <p className='font-mono animate-pulse lg:hidden'>YENİDEN İNŞAAT</p>
                     <div className='flex items-center'>
                         <div className="hidden lg:block">
-                            <Link className='px-5 font-semibold font-mono hover:text-gray-400 duration-200'>HAKKIMIZDA</Link>
-                            <Link className='px-5 font-semibold font-mono hover:text-gray-400 duration-200'>HİZMETLERİMİZ</Link>
-                            <Link className='px-5 font-semibold font-mono hover:text-gray-400 duration-200'>İLETİŞİM</Link>
+                            <Link className='px-5 font-semibold font-mono hover:text-sky-400 duration-200'>HAKKIMIZDA</Link>
+                            <Link className='px-5 font-semibold font-mono hover:text-sky-400 duration-200'>HİZMETLERİMİZ</Link>
+                            <Link className='px-5 font-semibold font-mono hover:text-sky-400 duration-200'>İLETİŞİM</Link>
                         </div>
                         <div className='lg:hidden cursor-pointer' onClick={() => setBar(!bar)}>
                             {
