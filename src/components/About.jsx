@@ -4,7 +4,7 @@ import insaatdeco from "../images/insaat-dekorasyon.jpg"
 const About = () => {
   return (
     <div className='p-4 my-6 text-center'>
-      <h1 className='font-mono font-bold text-3xl mb-8'>HAKKIMIZDA</h1>
+      <h1 className='font-mono font-bold text-3xl mb-8 mt-20' id="about">HAKKIMIZDA</h1>
       <div className='flex flex-col lg:flex-row items-start lg:justify-center text-start'>
         <div className='flex flex-col lg:flex-row w-full lg:w-10/12 '>
           <div className='mr-4'>
