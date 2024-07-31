@@ -59,7 +59,7 @@ const Navbar = () => {
                     </div>
                 </div>
                 {bar == 1 && (
-                    <div className='flex flex-col p-4 items-start justify-center bg-white shadow-md lg:hidden fixed top-16 left-0 w-full border-t-2 border-gray-100'>
+                    <div className='flex flex-col p-4 items-start justify-center bg-white shadow-md lg:hidden fixed top-14 left-0 w-full border-t-2 border-gray-100'>
                         <button onClick={() => { scrollToSection('about'); setBar(0); }} className='py-4 font-semibold font-mono hover:text-sky-400 duration-200'>HAKKIMIZDA</button>
                         <button onClick={() => { scrollToSection('services'); setBar(0); }} className='py-4 font-semibold font-mono hover:text-sky-400 duration-200'>HİZMETLERİMİZ</button>
                         <button onClick={() => { scrollToSection('contact'); setBar(0); }} className='py-4 font-semibold font-mono hover:text-sky-400 duration-200'>İLETİŞİM</button>
