@@ -50,9 +50,9 @@ const Navbar = () => {
                 </div>
                 {bar == 1 && (
                     <div className='flex flex-col p-4 items-start justify-center bg-white shadow-md lg:hidden fixed top-16 left-0 w-full border-t-2 border-gray-100'>
-                        <Link className='py-4 font-semibold font-mono hover:text-gray-400 duration-200'>HAKKIMIZDA</Link>
-                        <Link className='py-4 font-semibold font-mono hover:text-gray-400 duration-200'>HİZMETLERİMİZ</Link>
-                        <Link className='py-4 font-semibold font-mono hover:text-gray-400 duration-200'>İLETİŞİM</Link>
+                        <Link className='py-4 font-semibold font-mono hover:text-sky-400 duration-200'>HAKKIMIZDA</Link>
+                        <Link className='py-4 font-semibold font-mono hover:text-sky-400 duration-200'>HİZMETLERİMİZ</Link>
+                        <Link className='py-4 font-semibold font-mono hover:text-sky-400 duration-200'>İLETİŞİM</Link>
                     </div>
                 )}
             </div>
