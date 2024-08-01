@@ -41,8 +41,10 @@ const Navbar = () => {
             </div>
             <div className={`flex flex-col w-full ${scrolling ? 'fixed top-0 left-0 z-10' : ''}`}>
                 <div className='p-4 w-full flex items-center justify-between shadow-md bg-white'>
-                    <Link to="/" target='_top'><img src={logo} alt="" className='w-8 h-8' /></Link>
-                    <p className='font-mono animate-pulse lg:hidden'>YENİDEN İNŞAAT</p>
+                    <Link to="/" target='_top' className='flex items-center'>
+                        <img src={logo} alt="" className='w-8 h-8' />
+                        <h1 className='font-bold font-mono text-sky-400 text-lg' id="about">YENİDEN İNŞAAT AŞ</h1>
+                    </Link>
                     <div className='flex items-center'>
                         <div className="hidden lg:block">
                             <button onClick={() => scrollToSection('about')} className='px-5 font-semibold font-mono hover:text-sky-400 duration-200'>HAKKIMIZDA</button>
