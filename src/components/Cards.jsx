@@ -38,7 +38,7 @@ const Cards = () => {
   return (
     <div className='p-4 mb-16 mt-8'>
       <div className='w-full flex flex-col items-center justify-center'>
-        <h1 className='text-3xl font-bold font-mono mb-16' id='services'>HİZMETLERİMİZ</h1>
+        <h1 className='text-3xl font-bold font-mono mb-16'>HİZMETLERİMİZ</h1>
         <div className='w-full lg:w-10/12 mx-auto flex flex-col'>
           <div className='grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8'>
             {items.map(({ id, name, src, link }) => (

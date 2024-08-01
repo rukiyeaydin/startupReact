@@ -10,7 +10,7 @@ const Contact = () => {
 
   return (
     <div className='bg-gray-100 text-center px-4 py-16'>
-        <h1 className='font-bold font-mono text-3xl mb-8' id='contact'>İLETİŞİM</h1>
+        <h1 className='font-bold font-mono text-3xl mb-8'>İLETİŞİM</h1>
         <div className='flex flex-col lg:flex-row w-full lg:w-10/12 justify-center mx-auto'>
             <div className='flex flex-col bg-white rounded-xl p-6 mr-0 lg:mr-12 mb-8 lg:mb-0 shadow-md w-full text-start'>
                 <h1 className='font-bold text-2xl mb-5'>İletişime Geçin</h1>

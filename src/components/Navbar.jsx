@@ -22,15 +22,15 @@ const Navbar = () => {
         return () => window.removeEventListener('scroll', handleScroll);
     }, []);
 
-    const scrollToSection = (id) => {
-        const section = document.getElementById(id);
-        if (section) {
-            window.scrollTo({
-                top: section.offsetTop -80,
-                behavior: 'smooth',
-            });
-        }
-    };
+    // const scrollToSection = (id) => {
+    //     const section = document.getElementById(id);
+    //     if (section) {
+    //         window.scrollTo({
+    //             top: section.offsetTop -80,
+    //             behavior: 'smooth',
+    //         });
+    //     }
+    // };
 
     return (
         <div className='flex flex-col'>
@@ -47,9 +47,9 @@ const Navbar = () => {
                     </Link>
                     <div className='flex items-center'>
                         <div className="hidden lg:block">
-                            <button onClick={() => scrollToSection('about')} className='px-5 font-semibold font-mono hover:text-sky-400 duration-200'>HAKKIMIZDA</button>
-                            <button onClick={() => scrollToSection('services')} className='px-5 font-semibold font-mono hover:text-sky-400 duration-200'>HİZMETLERİMİZ</button>
-                            <button onClick={() => scrollToSection('contact')} className='px-5 font-semibold font-mono hover:text-sky-400 duration-200'>İLETİŞİM</button>
+                            <Link to="/hakkimizda" target='_top' className='px-5 font-semibold font-mono hover:text-sky-400 duration-200'>HAKKIMIZDA</Link>
+                            <Link to="/hizmetlerimiz" target='_top' className='px-5 font-semibold font-mono hover:text-sky-400 duration-200'>HİZMETLERİMİZ</Link>
+                            <Link to="/iletisim" target='_top' className='px-5 font-semibold font-mono hover:text-sky-400 duration-200'>İLETİŞİM</Link>
                         </div>
                         <div className='lg:hidden cursor-pointer' onClick={() => setBar(!bar)}>
                             {
@@ -62,9 +62,9 @@ const Navbar = () => {
                 </div>
                 {bar == 1 && (
                     <div className='flex flex-col p-4 items-start justify-center bg-white shadow-md lg:hidden fixed top-14 left-0 w-full border-t-2 border-gray-100'>
-                        <button onClick={() => { scrollToSection('about'); setBar(0); }} className='py-4 font-semibold font-mono hover:text-sky-400 duration-200'>HAKKIMIZDA</button>
-                        <button onClick={() => { scrollToSection('services'); setBar(0); }} className='py-4 font-semibold font-mono hover:text-sky-400 duration-200'>HİZMETLERİMİZ</button>
-                        <button onClick={() => { scrollToSection('contact'); setBar(0); }} className='py-4 font-semibold font-mono hover:text-sky-400 duration-200'>İLETİŞİM</button>
+                        <Link to="/hakkimizda" target='_top' className='py-4 font-semibold font-mono hover:text-sky-400 duration-200'>HAKKIMIZDA</Link>
+                        <Link to="/hizmetlerimiz" target='_top' className='py-4 font-semibold font-mono hover:text-sky-400 duration-200'>HİZMETLERİMİZ</Link>
+                        <Link to="/iletisim" target='_top' className='py-4 font-semibold font-mono hover:text-sky-400 duration-200'>İLETİŞİM</Link>
                     </div>
                 )}
             </div>
