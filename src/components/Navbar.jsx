@@ -1,12 +1,13 @@
 import React, { useState, useEffect } from 'react';
 import logo from "../images/Y.png";
-import { Link } from 'react-router-dom';
+import { Link,useLocation  } from 'react-router-dom';
 import { FaBars } from "react-icons/fa";
 import { MdClose } from "react-icons/md";
 
 const Navbar = () => {
     const [bar, setBar] = useState(0);
-    const [scrolling, setScrolling] = useState(false);
+    const [scrolling, setScrolling] = useState(false)
+    const location = useLocation();
 
     useEffect(() => {
         const handleScroll = () => {
@@ -21,6 +22,10 @@ const Navbar = () => {
 
         return () => window.removeEventListener('scroll', handleScroll);
     }, []);
+
+    const isActive = (path) => {
+        return location.pathname === path;
+    };
 
     // const scrollToSection = (id) => {
     //     const section = document.getElementById(id);
@@ -47,9 +52,10 @@ const Navbar = () => {
                     </Link>
                     <div className='flex items-center'>
                         <div className="hidden lg:block">
-                            <Link to="/hakkimizda" target='_top' className='px-5 font-semibold font-mono hover:text-sky-400 duration-200'>HAKKIMIZDA</Link>
-                            <Link to="/hizmetlerimiz" target='_top' className='px-5 font-semibold font-mono hover:text-sky-400 duration-200'>HİZMETLERİMİZ</Link>
-                            <Link to="/iletisim" target='_top' className='px-5 font-semibold font-mono hover:text-sky-400 duration-200'>İLETİŞİM</Link>
+                            <Link to="/" target='_top' className={`px-5 font-semibold font-mono duration-200 ${isActive("/") ? "text-sky-400" : "hover:text-sky-400"}`}>ANASAYFA</Link>
+                            <Link to="/hakkimizda" target='_top' className={`px-5 font-semibold font-mono duration-200 ${isActive("/hakkimizda") ? "text-sky-400" : "hover:text-sky-400"}`}>HAKKIMIZDA</Link>
+                            <Link to="/hizmetlerimiz" target='_top' className={`px-5 font-semibold font-mono duration-200 ${isActive("/hizmetlerimiz") ? "text-sky-400" : "hover:text-sky-400"}`}>HİZMETLERİMİZ</Link>
+                            <Link to="/iletisim" target='_top' className={`px-5 font-semibold font-mono duration-200 ${isActive("/iletisim") ? "text-sky-400" : "hover:text-sky-400"}`}>İLETİŞİM</Link>
                         </div>
                         <div className='lg:hidden cursor-pointer' onClick={() => setBar(!bar)}>
                             {
@@ -62,9 +68,10 @@ const Navbar = () => {
                 </div>
                 {bar == 1 && (
                     <div className='flex flex-col p-4 items-start justify-center bg-white shadow-md lg:hidden fixed top-14 left-0 w-full border-t-2 border-gray-100'>
-                        <Link to="/hakkimizda" target='_top' className='py-4 font-semibold font-mono hover:text-sky-400 duration-200'>HAKKIMIZDA</Link>
-                        <Link to="/hizmetlerimiz" target='_top' className='py-4 font-semibold font-mono hover:text-sky-400 duration-200'>HİZMETLERİMİZ</Link>
-                        <Link to="/iletisim" target='_top' className='py-4 font-semibold font-mono hover:text-sky-400 duration-200'>İLETİŞİM</Link>
+                        <Link to="/" target='_top' className={`py-4 font-semibold font-mono duration-200 ${isActive("/") ? "text-sky-400" : "hover:text-sky-400"}`}>ANASAYFA</Link>
+                        <Link to="/hakkimizda" target='_top' className={`py-4 font-semibold font-mono duration-200 ${isActive("/hakkimizda") ? "text-sky-400" : "hover:text-sky-400"}`}>HAKKIMIZDA</Link>
+                        <Link to="/hizmetlerimiz" target='_top' className={`py-4 font-semibold font-mono duration-200 ${isActive("/hizmetlerimiz") ? "text-sky-400" : "hover:text-sky-400"}`}>HİZMETLERİMİZ</Link>
+                        <Link to="/iletisim" target='_top' className={`py-4 font-semibold font-mono duration-200 ${isActive("/iletisim") ? "text-sky-400" : "hover:text-sky-400"}`}>İLETİŞİM</Link>
                     </div>
                 )}
             </div>
