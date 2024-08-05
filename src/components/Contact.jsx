@@ -15,7 +15,7 @@ const Contact = () => {
             <div className='flex flex-col bg-white rounded-xl p-6 mr-0 lg:mr-12 mb-8 lg:mb-0 shadow-md w-full text-start'>
                 <h1 className='font-bold text-2xl mb-5'>İletişime Geçin</h1>
                 <div className='flex items-center mb-4'>
-                    <FaPhone className='text-5xl mr-3 text-white bg-sky-400 p-2 rounded-full' />
+                    <FaPhone className='w-10 h-10 flex-shrink-0 mr-3 text-white bg-sky-400 p-2 rounded-full' />
                     <p><span className='font-semibold'>Telefon: </span> 
                         <a href="tel:05527206952" className="hover:text-sky-400 hover:underline">
                         0552 720 6952
@@ -23,7 +23,7 @@ const Contact = () => {
                     </p>
                 </div>
                 <div className='flex items-center mb-4'>
-                    <IoMail className='text-5xl mr-3 text-white bg-sky-400 p-2 rounded-full' />
+                    <IoMail className='w-10 h-10 flex-shrink-0 mr-3 text-white bg-sky-400 p-2 rounded-full' />
                     <p><span className='font-semibold'>E-Mail: </span> 
                         <a href="mailto:yeniden@gmail.com" className="hover:text-sky-400 hover:underline">
                         yeniden@gmail.com
@@ -31,7 +31,7 @@ const Contact = () => {
                     </p>
                 </div>
                 <div className='flex items-center mb-4'>
-                    <IoLocationSharp className='text-5xl mr-3 text-white bg-sky-400 p-2 rounded-full' />
+                    <IoLocationSharp className='w-10 h-10 flex-shrink-0 mr-3 text-white bg-sky-400 p-2 rounded-full' />
                     <p><span className='font-semibold'>Adres:</span> Akdeniz mah. 39173 Sk. Mezitli/Mersin</p>
                 </div>
             </div>

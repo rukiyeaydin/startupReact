@@ -8,7 +8,7 @@ const Footer = () => {
     <div>
         <div className='p-4 pt-8 w-full justify-center shadow-topShadow'>
             <div className='flex flex-col lg:flex-row w-full lg:w-10/12 justify-between mx-auto items-center lg:items-start'>
-                <img src={logo} alt="logo" className='h-24 w-24' />
+                <img src={logo} alt="logo" className='h-12 w-12' />
                 <div className='flex flex-col text-center my-4 lg:my-0 '>
                     <h1 className='font-bold text-xl'>YENİDEN İNŞAAT AŞ.</h1>
                     <p className=''>Yeniden İnşaat; Boya, Duvar Kağıdı, Alçı, Parke A’dan Z’ye Anahtar Teslim Hizmetler.</p>

@@ -4,6 +4,10 @@ import Home from './routes/Home';
 import Hakkimizda from './routes/Hakkimizda'
 import Hizmetlerimiz from './routes/Hizmetlerimiz'
 import Iletisim from './routes/Iletisim';
+import Boya from './routes/Boya'
+import Alci from './routes/Alci';
+import Wallpaper from './routes/Wallpaper';
+import Parke from './routes/Parke';
 
 function App() {
 
@@ -15,6 +19,10 @@ function App() {
           <Route path="/hakkimizda" element={<Hakkimizda />} />
           <Route path="/hizmetlerimiz" element={<Hizmetlerimiz />} />
           <Route path="/iletisim" element={<Iletisim />} />
+          <Route path='/boya' element={<Boya/>} />
+          <Route path='/alci' element={<Alci/>} />
+          <Route path='/duvar-kagidi' element={<Wallpaper/>} />
+          <Route path='/parke' element={<Parke/>} />
         </Routes>
       </Router>
     </>

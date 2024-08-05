@@ -53,7 +53,7 @@ const Navbar = () => {
                     <div className='flex items-center'>
                         <div className="hidden lg:block">
                             <Link to="/" target='_top' className={`px-5 font-semibold font-mono duration-200 ${isActive("/") ? "text-sky-400" : "hover:text-sky-400"}`}>ANASAYFA</Link>
-                            <Link to="/hakkimizda" target='_top' className={`px-5 font-semibold font-mono duration-200 ${isActive("/hakkimizda") ? "text-sky-400" : "hover:text-sky-400"}`}>HAKKIMIZDA</Link>
+                            {/* <Link to="/hakkimizda" target='_top' className={`px-5 font-semibold font-mono duration-200 ${isActive("/hakkimizda") ? "text-sky-400" : "hover:text-sky-400"}`}>HAKKIMIZDA</Link> */}
                             <Link to="/hizmetlerimiz" target='_top' className={`px-5 font-semibold font-mono duration-200 ${isActive("/hizmetlerimiz") ? "text-sky-400" : "hover:text-sky-400"}`}>HİZMETLERİMİZ</Link>
                             <Link to="/iletisim" target='_top' className={`px-5 font-semibold font-mono duration-200 ${isActive("/iletisim") ? "text-sky-400" : "hover:text-sky-400"}`}>İLETİŞİM</Link>
                         </div>
@@ -69,7 +69,7 @@ const Navbar = () => {
                 {bar == 1 && (
                     <div className='flex flex-col p-4 items-start justify-center bg-white shadow-md lg:hidden fixed top-14 left-0 w-full border-t-2 border-gray-100'>
                         <Link to="/" target='_top' className={`py-4 font-semibold font-mono duration-200 ${isActive("/") ? "text-sky-400" : "hover:text-sky-400"}`}>ANASAYFA</Link>
-                        <Link to="/hakkimizda" target='_top' className={`py-4 font-semibold font-mono duration-200 ${isActive("/hakkimizda") ? "text-sky-400" : "hover:text-sky-400"}`}>HAKKIMIZDA</Link>
+                        {/* <Link to="/hakkimizda" target='_top' className={`py-4 font-semibold font-mono duration-200 ${isActive("/hakkimizda") ? "text-sky-400" : "hover:text-sky-400"}`}>HAKKIMIZDA</Link> */}
                         <Link to="/hizmetlerimiz" target='_top' className={`py-4 font-semibold font-mono duration-200 ${isActive("/hizmetlerimiz") ? "text-sky-400" : "hover:text-sky-400"}`}>HİZMETLERİMİZ</Link>
                         <Link to="/iletisim" target='_top' className={`py-4 font-semibold font-mono duration-200 ${isActive("/iletisim") ? "text-sky-400" : "hover:text-sky-400"}`}>İLETİŞİM</Link>
                     </div>
