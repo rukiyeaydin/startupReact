@@ -42,7 +42,7 @@ const Navbar = () => {
             <div className='items-center justify-around w-full bg-black p-3 text-white hidden lg:block lg:flex'>
                 <p className='font-mono animate-pulse'>YENİDEN İNŞAAT</p>
                 <p className='font-mono animate-pulse'>E-Posta: yeniden@gmail.com</p>
-                <p className='font-mono animate-pulse'>Bizi Arayın: 0552 720 6952</p>
+                <p className='font-mono animate-pulse'>Bizi Arayın: 0555 555 5555</p>
             </div>
             <div className={`flex flex-col w-full ${scrolling ? 'fixed top-0 left-0 z-10' : ''}`}>
                 <div className='p-4 w-full flex items-center justify-between shadow-md bg-white'>

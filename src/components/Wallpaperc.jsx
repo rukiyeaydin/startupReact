@@ -40,8 +40,8 @@ const Wallpaperc = () => {
                 <div className='flex items-center mb-4'>
                     <FaPhone className='w-10 h-10 flex-shrink-0  mr-3 text-white bg-sky-400 p-2 rounded-full' />
                     <p><span className='font-semibold'>Telefon: </span> 
-                        <a href="tel:05527206952" className="hover:text-sky-400 hover:underline">
-                        0552 720 6952
+                        <a href="tel:05555555555" className="hover:text-sky-400 hover:underline">
+                        0555 555 5555
                         </a>
                     </p>
                 </div>

@@ -17,19 +17,19 @@ const Cards = () => {
             id: 2,
             name: "Alçı",
             src: alci,
-            linkto: 'alci',
+            linkto: '/alci',
         },
         {
             id: 3,
             name: "Duvar Kağıdı",
             src: wallpp,
-            linkto: 'duvar-kagidi',
+            linkto: '/duvar-kagidi',
         },
         {
             id: 4,
             name: "Parke",
             src: parke,
-            linkto: 'parke',
+            linkto: '/parke',
         },
 
     ];
